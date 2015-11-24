@@ -56,17 +56,17 @@ copyright = u'2011-2015, 1&1 Internet AG'
 # built documents.
 #
 # The short X.Y version.
-version = '5.0.1'
+version = '5.1'
 # The full version, including alpha/beta/rc tags.
-release = '5.0.1'
+release = '5.1'
 # The current git branch (used for github links)
 git_branch = "branch_5_0_x"
 
 # qooxdoo Source Text Macros
 # use e.g. as "%{version}" anywhere in .rst files
 vMajor = "5"
-vMinor = "0"
-vPatch = "1"
+vMinor = "1"
+vPatch = ""
 qxmacros = {
     "version"  : vMajor + '.' + vMinor + (('.' + vPatch) if vPatch else '')
    ,"versionL" : vMajor + '.' + vMinor + '.x' # latest in this line

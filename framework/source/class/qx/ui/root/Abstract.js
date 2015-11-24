@@ -257,6 +257,12 @@ qx.Class.define("qx.ui.root.Abstract",
         return;
       }
 
+      // do not prevent "space" key for natively focusable elements
+      nodeName = qx.dom.Node.getName(e.getOriginalTarget());
+      if (nodeName && ["input", "textarea", "select", "a"].indexOf(nodeName) > -1) {
+        return;
+      }
+
       // Ultimately, prevent default
       e.preventDefault();
     },
